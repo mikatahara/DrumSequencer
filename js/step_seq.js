@@ -221,7 +221,9 @@ function seq_restart()
 /* 基本図形の描画 */
 //itk=>Track, ibt=>Beat
 function clear(jtk,jbt){
-	ctx.clearRect(ixo+jbt*ixa+1, iyo+jtk*iya+1, 28, 28);
+	ctx.fillStyle = "#DDDDDD";
+	ctx.fillRect(ixo+ipn*ixa+1, iyb+1, ixa-2, iyt-1);
+//	ctx.clearRect(ixo+jbt*ixa+1, iyo+jtk*iya+1, 28, 28);
 }
 
 function draw(){
