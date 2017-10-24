@@ -77,30 +77,14 @@ function initdrum(){
 	}
 
 	//Load Wave Files
-	loadDogSound("freedrum/wav/kickbeateron1.wav"	,dm0 );
-	loadDogSound("freedrum/wav/snare1.wav" 			,dm1 );
-	loadDogSound("freedrum/wav/floortom1.wav" 		,dm2 );
-	loadDogSound("freedrum/wav/tom1.wav" 			,dm3 );
-	loadDogSound("freedrum/wav/hihatclose1.wav"		,dm4 );
-	loadDogSound("freedrum/wav/hihatloose1.wav"		,dm5 );
-	loadDogSound("freedrum/wav/hihat1.wav" 			,dm6 );
-	loadDogSound("freedrum/wav/crash20inch1.wav"	,dm7 );
-
-
-	//Load Image File
-	mImg_pad =new Array(9);
-	mPosx =new Array(8);
-	mPosy =new Array(8);
-	for(var i=0; i<9; i++) mImg_pad[i]= new Image();
-	mImg_pad[0].src = "freedrum/png/pad_blueA.png";
-	mImg_pad[1].src = "freedrum/png/pad_blueS.png";
-	mImg_pad[2].src = "freedrum/png/pad_blueD.png";
-	mImg_pad[3].src = "freedrum/png/pad_blueF.png";
-	mImg_pad[4].src = "freedrum/png/pad_greenH.png";
-	mImg_pad[5].src = "freedrum/png/pad_greenJ.png";
-	mImg_pad[6].src = "freedrum/png/pad_greenK.png";
-	mImg_pad[7].src = "freedrum/png/pad_greenL.png";
-	mImg_pad[8].src = "freedrum/png/pad_orange.png";
+	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/kickbeateron1.wav"	,dm0 );
+	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/snare1.wav" 		,dm1 );
+	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/floortom1.wav" 		,dm2 );
+	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/tom1.wav" 			,dm3 );
+	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/hihatclose1.wav"	,dm4 );
+	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/hihatloose1.wav"	,dm5 );
+	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/hihat1.wav" 		,dm6 );
+	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/crash20inch1.wav"	,dm7 );
 
 	// Web MIDI API
 	setInputMenuID(document.input_device_select.ids);
