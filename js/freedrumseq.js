@@ -192,8 +192,6 @@ function mNoteon( ckey )
 		case crsl: dnum=0; break;
 	}
 
-	fdg1.fDrawImageW(mImg_pad[8],mPosx[dnum],mPosy[dnum]);
-
 	var computedPlaybackRate = Math.pow(2, (ckey-mKeylim[cnum][1])/12);
 
 	audioSource[jnum] = audioContext.createBufferSource();	// creates a sound source
