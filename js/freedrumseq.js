@@ -201,8 +201,6 @@ function mNoteon( ckey )
 	audioSource[jnum].connect(audioContext.destination);
 	audioSource[jnum].playbackRate.value = computedPlaybackRate;
 	audioSource[jnum].start(0);								// play the source now
-
-	fdg1.fDrawLine(mLocalAudioBuffer[cnum].buffer);
 }
 
 
