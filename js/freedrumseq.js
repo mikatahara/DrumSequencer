@@ -87,9 +87,10 @@ function initdrum(){
 	loadDogSound("https://mikatahara.github.io/DrumMachine/freedrum/wav/crash20inch1.wav"	,dm7 );
 
 	// Web MIDI API
-	setInputMenuID(document.input_device_select.ids);
+/*	setInputMenuID(document.input_device_select.ids);
 	setOutputMenuID(document.output_device_select.ids);
 	runTest();
+*/
 };
 
 function loadDogSound(url, n) {
