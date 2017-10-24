@@ -124,7 +124,7 @@ function seq_play()
 		if(jpn<0) jpn=15;
 
 		//toggle[mTrack][mBeat]
-		if(toggle[0][jpn]==true) outMessage(0x90|mCh,tone[0],0);
+/*		if(toggle[0][jpn]==true) outMessage(0x90|mCh,tone[0],0);
 		if(toggle[1][jpn]==true) outMessage(0x90|mCh,tone[1],0);
 		if(toggle[2][jpn]==true) outMessage(0x90|mCh,tone[2],0);
 		if(toggle[3][jpn]==true) outMessage(0x90|mCh,tone[3],0);
@@ -132,15 +132,15 @@ function seq_play()
 		if(toggle[5][jpn]==true) outMessage(0x90|mCh,tone[5],0);
 		if(toggle[6][jpn]==true) outMessage(0x90|mCh,tone[6],0);
 		if(toggle[7][jpn]==true) outMessage(0x90|mCh,tone[7],0);
-
-		if(toggle[0][ipn]==true) outMessage(0x90|mCh,tone[0],dvol[0]);
-		if(toggle[1][ipn]==true) outMessage(0x90|mCh,tone[1],dvol[1]);
-		if(toggle[2][ipn]==true) outMessage(0x90|mCh,tone[2],dvol[2]);
-		if(toggle[3][ipn]==true) outMessage(0x90|mCh,tone[3],dvol[3]);
-		if(toggle[4][ipn]==true) outMessage(0x90|mCh,tone[4],dvol[0]);
-		if(toggle[5][ipn]==true) outMessage(0x90|mCh,tone[5],dvol[1]);
-		if(toggle[6][ipn]==true) outMessage(0x90|mCh,tone[6],dvol[2]);
-		if(toggle[7][ipn]==true) outMessage(0x90|mCh,tone[7],dvol[3]);
+*/
+		if(toggle[0][ipn]==true) mNoteon(bdrm);
+		if(toggle[1][ipn]==true) mNoteon(srnr);
+		if(toggle[2][ipn]==true) mNoteon(lftm);
+		if(toggle[3][ipn]==true) mNoteon(hftm);
+		if(toggle[4][ipn]==true) mNoteon(cdhh);
+		if(toggle[5][ipn]==true) mNoteon(pdhh);
+		if(toggle[6][ipn]==true) mNoteon(ophh);
+		if(toggle[7][ipn]==true) mNoteon(crsl);
 
 		ipn++;
 		if(ipn>=16) ipn=0;
