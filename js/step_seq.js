@@ -98,7 +98,7 @@ function button(x, y, width, height){
 		//toggle[mTrack][mBeat], ipx=>Track, ipy=>Beat
 		if(x < mouseX && mouseX < x + width){
 			if(y < mouseY && mouseY < y + height){
-				if(toggle[ipx][ipy]){
+				if(toggle[ipx][ipy]==false){
 					draw1(ipx,ipy);
 					toggle[ipx][ipy] = true;
 				}else{
