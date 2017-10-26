@@ -223,7 +223,7 @@ function seq_restart()
 function clear(jtk,jbt){
 	ctx.fillStyle = "#DDDDDD";
 //	ctx.fillRect(ixo+ipn*ixa+1, iyb+1, ixa-2, iyt-1);
-	ctx.fillRect(ixo+jbt*ixa+1, iyo+jtk*iya+1, 28, 28);
+	ctx.fillRect(ixo+jbt*ixa+1, iyo+jtk*iya+1, ixa-2, iya-2);
 }
 
 function draw(){
@@ -235,7 +235,7 @@ function draw(){
 //itk=>Track, ibt=>Beat
 function draw1(jtk,jbt) {
   ctx.beginPath();
-  ctx.arc(ixo+jbt*ixa+15, iyo+jtk*iya+15, 10, 0, Math.PI*2, false);
+  ctx.arc(ixo+jbt*ixa+ixa/2, iyo+jtk*iya+iya/2, 10, 0, Math.PI*2, false);
   ctx.stroke();
 }
 
