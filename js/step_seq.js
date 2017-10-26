@@ -235,7 +235,7 @@ function draw(){
 //itk=>Track, ibt=>Beat
 function draw1(jtk,jbt) {
   ctx.beginPath();
-  ctx.arc(ixo+jbt*ixa+ixa/2, iyo+jtk*iya+iya/2, 10, 0, Math.PI*2, false);
+  ctx.arc(ixo+jbt*ixa+ixa/2, iyo+jtk*iya+iya/2, ixa/, 0, Math.PI*2, false);
   ctx.stroke();
 }
 
