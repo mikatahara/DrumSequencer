@@ -20,6 +20,22 @@ alink="#ff0000" style="margin-right:28px;margin-left:28px;margin-top:10px;">
 <canvas id="step_seq" width="960" height="480"></canvas>
 </div>
 
+<!--	------------------------------------------------------------------ -->
+<form name="tempo_input">
+<p>テンポ：
+<input type="number" name="tempo" step="1" min="60" max="240" value="120" onChange="changeTempo(this);">
+</form>
+
+<!--	------------------------------------------------------------------ -->
+<!-- START & STOP & CLEARボタン -->
+<p>
+<form name="start_stop">
+<input type="button" value="stop" onClick="seq_stop();">
+<input type="button" value="start" onClick="seq_restart();">
+<input type="button" value="clear" onClick="clear_all();">
+<input type="button" value="all sound off" onClick="all_sound_off();">
+</form>
+
 <div id="log">
 </div>
 </center>
