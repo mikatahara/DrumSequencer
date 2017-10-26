@@ -210,7 +210,9 @@ function seq_restart()
 	if(timerId!=null)  clearInterval(timerId);
 	timerId=null;
 
-	ctx.clearRect(ixo+ipn*ixa+1, iyb+1, ixa-2, iyt-1);
+	ctx.fillStyle = "#DDDDDD";
+//	ctx.clearRect(ixo+ipn*ixa+1, iyb+1, ixa-2, iyt-1);
+	ctx.fillRect(ixo+ipn*ixa+1, iyb+1, ixa-2, iyt-1);
 	ipn=15;
 
 	seq_play();	/* シーケンサープ再生スタート */
