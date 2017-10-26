@@ -225,7 +225,7 @@ function seq_restart()
 function clear(jtk,jbt){
 	ctx.fillStyle = "#DDDDDD";
 //	ctx.fillRect(ixo+ipn*ixa+1, iyb+1, ixa-2, iyt-1);
-	ctx.fillRect(ixo+jbt*ixa+1, iyo+jtk*iya+1, ixa-2, iya-2);
+	ctx.fillRect(ixo+jbt*ixa+1, iyo+jtk*iya+1, ixa-3, iya-3);
 }
 
 function draw(){
