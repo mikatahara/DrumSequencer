@@ -159,7 +159,7 @@ function clear_all()
 	var i,j;
 	for(j=0; j<mTrack; j++){
 		for(i=0; i<mBeat; i++){
-			toggle[j][i]=true;
+			toggle[j][i]=false;
 			clear(j,i);
 		}
 	}
