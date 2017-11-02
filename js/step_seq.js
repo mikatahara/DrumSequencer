@@ -23,7 +23,16 @@ var tone	=new Array();	//各トラックのドラムのノート番号
 var dvol	=[ 127,127,127,127,127,127,127,127 ];	//ドラムの音量
 var mCh		=0;				//Channel Number
 
-var mNumtxt =["1-", "2-", "3-", "4-", "5-", "6-", "7-", "8-"];
+var mNumtxt =["BD", "SN", "LT", "HT", "CH", "PH", "OH", "CC"];
+
+// 1. Bass Drum			36	//kickbeateron1.wav
+// 2. Snare				38	//snare1.wav
+// 3. Low Floor Tom		41	//floortom1.wav
+// 4. High Floor Tom	43	//tom1.wav
+// 5. Closed Hi-Hat		42	//hihatclose1.wav
+// 6. Pedal Hi-Hat		44	//hihatloose1.wav
+// 7. Open Hi-Hat		46	//hihat1.wav
+// 8. Crash Cymbal		49	//crash20inch1.wav
 
 window.addEventListener('load', function (){
 

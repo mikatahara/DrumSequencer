@@ -24,4 +24,5 @@ https://mikatahara.github.io/DrumSequencer/
 - Touch a cell, a circle is discrived.
 - When the Beat maker comes to a culumn, all instruments make a sound. 
 if the cell has the circle .
+- Touch a cell that has a circle, the circle disapers.
 
